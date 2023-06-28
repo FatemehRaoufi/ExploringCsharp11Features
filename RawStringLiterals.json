@@ -1,0 +1,39 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ]
+}
+/*
+C10:
+                string name = "Shehryar";
+                string surname = "Khan";
+
+                string jsonString =
+                  $@"
+          {{
+            'Name': {name},
+            'Surname': {surname}
+          }}
+          ";
+
+*/
+
+//C11:
+{
+  string name
+  = "Shehryar"
+  ; string
+  surname =
+  "Khan" ;
+  string jsonString
+  = $$""" {
+  "Name": { { name } },
+  "Surname": { { surname } }
+} """;
+
+
